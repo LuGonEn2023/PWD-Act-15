@@ -34,18 +34,18 @@
      (precio unitario expresado en ARS, sin centavos -> se usa entero)
   --------------------------*/
   const SAMPLE_PRODUCTS = [
-    { id:'m001', title:'Jujutsu Kaisen Vol.1', author:'Gege Akutami', editorial:'Shueisha', price:12000, stock:12, img: 'https://source.unsplash.com/400x600/?manga,anime,book' },
-    { id:'m002', title:'Chainsaw Man Vol.1', author:'Tatsuki Fujimoto', editorial:'Shueisha', price:11000, stock:8, img: 'https://source.unsplash.com/400x600/?chainsaw,comic,book' },
-    { id:'m003', title:'One Piece Vol.1', author:'Eiichiro Oda', editorial:'Shueisha', price:10000, stock:20, img: 'https://source.unsplash.com/400x600/?onepiece,manga,comic' },
-    { id:'m004', title:'Berserk Vol.1 (Deluxe)', author:'Kentaro Miura', editorial:'Hakusensha', price:45000, stock:4, img: 'https://source.unsplash.com/400x600/?berserk,comic,book' },
-    { id:'m005', title:'Akira Vol.1', author:'Katsuhiro Otomo', editorial:'Kodansha', price:22000, stock:6, img: 'https://source.unsplash.com/400x600/?akira,manga,book' },
-    { id:'m006', title:'My Hero Academia Vol.1', author:'Kohei Horikoshi', editorial:'Shueisha', price:9500, stock:14, img: 'https://source.unsplash.com/400x600/?myheroacademy,manga,book' },
-    { id:'m007', title:'Death Note Vol.1', author:'Tsugumi Ohba', editorial:'Shueisha', price:13000, stock:11, img: 'https://source.unsplash.com/400x600/?deathnote,manga,book' },
-    { id:'m008', title:'Vagabond Vol.1', author:'Takehiko Inoue', editorial:'Kodansha', price:26000, stock:7, img: 'https://source.unsplash.com/400x600/?vagabond,manga,book' },
-    { id:'m009', title:'Fullmetal Alchemist Vol.1', author:'Hiromu Arakawa', editorial:'Square Enix', price:14000, stock:10, img: 'https://source.unsplash.com/400x600/?fullmetal,manga,book' },
-    { id:'m010', title:'Tokyo Ghoul Vol.1', author:'Sui Ishida', editorial:'Shueisha', price:11500, stock:9, img: 'https://source.unsplash.com/400x600/?tokyoghoul,manga,book' },
-    { id:'m011', title:'Hunter x Hunter Vol.1', author:'Yoshihiro Togashi', editorial:'Shueisha', price:12500, stock:13, img: 'https://source.unsplash.com/400x600/?hunterxhunter,manga,book' },
-    { id:'m012', title:'Neon Genesis Evangelion Vol.1', author:'Yoshiyuki Sadamoto', editorial:'Kadokawa', price:20000, stock:5, img: 'https://source.unsplash.com/400x600/?evangelion,manga,book' }
+    { id:'m001', title:'Jujutsu Kaisen Vol.1', author:'Gege Akutami', editorial:'Shueisha', price:12000, stock:12, img: 'Imagenes/JJK.webp' },
+    { id:'m002', title:'Chainsaw Man Vol.1', author:'Tatsuki Fujimoto', editorial:'Shueisha', price:11000, stock:8, img: 'Imagenes/CSM.webp' },
+    { id:'m003', title:'One Piece Vol.1', author:'Eiichiro Oda', editorial:'Shueisha', price:10000, stock:20, img: 'Imagenes/OnePiece.webp' },
+    { id:'m004', title:'Berserk Vol.1 (Deluxe)', author:'Kentaro Miura', editorial:'Hakusensha', price:45000, stock:4, img: 'Imagenes/Berserk.webp' },
+    { id:'m005', title:'Gachiakuta Vol.1', author:'Kei Urana', editorial:'Shueisha', price:22000, stock:6, img: 'Imagenes/Gachiakuta.webp' },
+    { id:'m006', title:'My Hero Academia Vol.1', author:'Kohei Horikoshi', editorial:'Shueisha', price:9500, stock:14, img: 'Imagenes/BNHA.webp' },
+    { id:'m007', title:'Death Note Vol.1', author:'Tsugumi Ohba', editorial:'Shueisha', price:13000, stock:11, img: 'Imagenes/DeathNote.webp' },
+    { id:'m008', title:'Vagabond Vol.1', author:'Takehiko Inoue', editorial:'Kodansha', price:26000, stock:7, img: 'Imagenes/Vagabond.webp' },
+    { id:'m009', title:'Fullmetal Alchemist Vol.1', author:'Hiromu Arakawa', editorial:'Square Enix', price:14000, stock:10, img: 'Imagenes/FMA.webp' },
+    { id:'m010', title:'Tokyo Ghoul Vol.1', author:'Sui Ishida', editorial:'Shueisha', price:11500, stock:9, img: 'Imagenes/TokyoGhoul.webp' },
+    { id:'m011', title:'Hunter x Hunter Vol.1', author:'Yoshihiro Togashi', editorial:'Shueisha', price:12500, stock:13, img: 'Imagenes/HxH.webp' },
+    { id:'m012', title:'Neon Genesis Evangelion Vol.1', author:'Yoshiyuki Sadamoto', editorial:'Kadokawa', price:20000, stock:5, img: 'Imagenes/NGE.webp' }
   ];
 
   // Inicializar productos en localStorage si no existen (para persistencia)
