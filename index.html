@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MangaStore Online — Tienda de mangas físicos</title>
+  <meta name="description" content="Simulación de carrito de compras para mangas físicos. Registro, login, catálogo, carrito y checkout." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden>MS</div>
+      <div>
+        <h1>MangaStore Online</h1>
+        <div class="small-muted">Tienda simulada de mangas físicos</div>
+      </div>
+    </div>
+
+    <div class="controls" role="navigation" aria-label="Controles de usuario">
+      <div class="search" title="Buscar mangas">
+        <input id="searchInput" type="search" placeholder="Buscar por título o autor" aria-label="Buscar productos">
+        <select id="sortSelect" title="Ordenar">
+          <option value="popular">Más populares</option>
+          <option value="price-asc">Precio ↑</option>
+          <option value="price-desc">Precio ↓</option>
+        </select>
+      </div>
+
+      <div id="authArea" class="row">
+        <button id="btnOpenLogin" class="btn">Iniciar sesión</button>
+        <button id="btnOpenRegister" class="btn secondary">Registrarse</button>
+        <button id="btnViewCart" class="btn ghost" title="Ver carrito">Carrito 🛒 <span id="cartCount" class="chip">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:12px">
+        <h2 style="margin:0">Catálogo de mangas</h2>
+        <div class="muted">Seleccioná tus tomos físicos favoritos</div>
+      </div>
+
+      <div id="catalog" class="catalog" aria-live="polite">
+        <!-- tarjetas de productos se inyectan con JS -->
+      </div>
+
+      <div id="emptyCatalog" class="empty" style="display:none;margin-top:18px">
+        No se encontraron productos.
+      </div>
+    </section>
+
+    <aside class="sidebar" aria-labelledby="cartTitle">
+      <h3 id="cartTitle">Tu carrito</h3>
+      <div id="cartList" style="min-height:120px">
+        <div class="empty">Tu carrito está vacío. Agregá mangas desde el catálogo.</div>
+      </div>
+
+      <div class="divider" aria-hidden></div>
+
+      <div>
+        <div class="row">
+          <div class="small-muted">Subtotal</div>
+          <div class="spacer"></div>
+          <div id="subtotal" class="price">$0</div>
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <button id="btnCheckout" class="btn" style="flex:1">Finalizar compra</button>
+          <button id="btnClearCart" class="btn secondary" style="flex:1">Vaciar</button>
+        </div>
+      </div>
+
+      <div class="divider" aria-hidden></div>
+
+      <div class="small-muted">
+        Sesión: <span id="sessionUser">Invitado</span>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    Actividad 15 — Simulación de carrito de compras · MangaStore Online — (implementación local)
+  </footer>
+
+  <!-- Modal backdrop -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="modal" class="modal" role="document" tabindex="-1">
+      <!-- contenido dinámico -->
+    </div>
+  </div>
+
+  <!-- qrcode library (for ticket generation) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
